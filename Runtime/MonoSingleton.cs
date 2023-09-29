@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace JSeger.Utilities.Mono.Runtime
+namespace JSeger.Utilities.MonoTools.Runtime
 {
-    public sealed class Singleton<T> : MonoBehaviour where T : Component
+    public sealed class MonoSingleton<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
@@ -19,7 +19,7 @@ namespace JSeger.Utilities.Mono.Runtime
         }
     }
 
-    public sealed class SingletonPersistent<T> : MonoBehaviour where T : Component
+    public sealed class MonoSingletonPersistent<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
