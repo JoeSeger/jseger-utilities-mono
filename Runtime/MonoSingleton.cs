@@ -2,7 +2,7 @@
 
 namespace JSeger.Utilities.MonoTools.Runtime
 {
-    public sealed class MonoSingleton<T> : MonoBehaviour where T : Component
+    public  class MonoSingleton<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
@@ -19,7 +19,7 @@ namespace JSeger.Utilities.MonoTools.Runtime
         }
     }
 
-    public sealed class MonoSingletonPersistent<T> : MonoBehaviour where T : Component
+    public  class MonoSingletonPersistent<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
