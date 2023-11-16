@@ -2,11 +2,11 @@
 
 namespace JSeger.Utilities.MonoTools.Runtime
 {
-    public  class MonoSingleton<T> : MonoBehaviour where T : Component
+    public  abstract class MonoSingleton<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
-        public void Awake()
+        public virtual void Awake()
         {
             if (Instance == null)
             {
@@ -19,11 +19,11 @@ namespace JSeger.Utilities.MonoTools.Runtime
         }
     }
 
-    public  class MonoSingletonPersistent<T> : MonoBehaviour where T : Component
+    public  abstract class MonoSingletonPersistent<T> : MonoBehaviour where T : Component
     {
         public static T Instance { get; private set; }
 
-        public void Awake()
+        public virtual void Awake()
         {
             if (Instance == null)
             {
